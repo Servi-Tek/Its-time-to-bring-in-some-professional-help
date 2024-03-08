@@ -105,7 +105,7 @@
         display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure it takes the full width of the container */
+    width: auto; /* Ensure it takes the full width of the container */
     padding: 5%;
     margin: 0;
 }
@@ -121,10 +121,16 @@
     margin: 0%;
     padding: 0%;
 }
-
+.book-now a
+{
+    width: 100%;
+    justify-self: center;
+}
 .book-now img {
+    display: flex;
     padding: 0;
     width: 30%;
+    margin: auto;
     cursor: pointer;   
     transition: transform 0.3s ease; /* Add smooth transition */
 }
@@ -144,7 +150,7 @@
         }
         .icon i
         {
-            font-size: clamp(9px, 2vw, 100px);
+            font-size: clamp(32px, 3vw, 100px);
             margin-left: 2%;
             margin-right: 2%;
             color: white;     
@@ -158,6 +164,17 @@
         {
             text-decoration: none;
         }
+        /* For tablets */
+@media (max-width: 1024px) {
+    
+    .container {
+        width: auto;
+    }
+    .learn-more img
+    {
+        margin-bottom: 20%;
+    }
+}
 
  
     </style>
@@ -181,7 +198,7 @@
             </div>
         </div>
         <div class="book-now">
-        <img src="https://servi-tek.net/wp-content/uploads/2019/07/95-3.png">
+        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ314IVqLnbfXWkrTdj6G2rP5kKhOrsj2TotYxLl3qIWgaFh85NIn_vtOLb3rW3Ilz2ArPaocaJH"><img src="https://servi-tek.net/wp-content/uploads/2019/07/95-3.png"></a>
         </div>
         <div class="icon">
             <a href="https://www.facebook.com/ServiTekFacilitySolutions/"><i class="fa fa-facebook-f"></i></a>
