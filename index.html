@@ -53,10 +53,10 @@
             border-spacing: 0;
         }
         .container {
-        width: 50%;
+        width: 50% !important;
         margin: auto;
         background-image: url('https://servi-tek.net/wp-content/uploads/2019/07/Copy-of-Corporate-Blue-Wave-Shape-Long-Email-Newsletter-2.webp');
-        padding-top: 10%;
+        padding: 10% 0% 2% 0%;
         background-size: cover;
         height: auto;
     }
@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
     width: auto; /* Ensure it takes the full width of the container */
-    padding: 5%;
+   
     margin: 0;
 }
     .inner-body img
@@ -150,16 +150,14 @@
         }
         .icon i
         {
-            font-size: clamp(32px, 3vw, 100px);
-            margin-left: 2%;
-            margin-right: 2%;
+            font-size: 3vw;
+            padding: 0% 2% 0% 2%;
             color: white;     
         }
         .icon i:hover
         {
             color: #FBBD00;
         }
-       
         .icon a
         {
             text-decoration: none;
@@ -168,13 +166,30 @@
 @media (max-width: 1024px) {
     
     .container {
-        width: auto;
+        width: 100% !important;
+        height: 100% !important;
     }
     .learn-more img
     {
         margin-bottom: 20%;
     }
+    .icon i {
+        font-size: 20px; /* Font size for screens wider than 3840px */
+    }
 }
+@media (max-width: 500px) {
+    .icon i{
+        font-size: 15px !important;
+    }
+    
+}
+@media (max-width: 3840px) {
+    .icon i {
+        font-size: 50px; /* Font size for screens wider than 3840px */
+    }
+}
+
+
 
  
     </style>
